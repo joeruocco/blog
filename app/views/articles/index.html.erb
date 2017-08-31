@@ -1,0 +1,14 @@
+<h1>Listing Articles</h1>
+<img src="http://placekitten.com/g/1500/300"/>
+ <table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+    </tr>
+  <% end %>
+</table>
